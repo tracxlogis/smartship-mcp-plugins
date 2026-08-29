@@ -1,0 +1,16 @@
+{
+  "name": "smartship",
+  "version": "0.4.0",
+  "description": "Tx SmartShip 셀러 업무 플러그인 — SmartShip MCP 서버 연결(OAuth 2.1)과 업무 스킬 12종(주문·송장·픽업·SKU/재고·배송 현황 + 업무 브리핑·주문 분석·풀필먼트 운영·문제 주문 해결·클레임 CS·정산/TxMoney·재고 동기화)을 제공한다.",
+  "author": {
+    "name": "TracX Logis",
+    "url": "https://smartship2.tracxlogis.com"
+  },
+  "homepage": "https://smartship2.tracxlogis.com/services/smartship-mcp",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "SmartShip",
+    "shortDescription": "SmartShip 주문·배송·픽업·SKU/재고를 대화로 조회·처리"
+  }
+}

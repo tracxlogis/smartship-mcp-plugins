@@ -1,0 +1,17 @@
+{
+  "name": "tracx-mcp-marketplace",
+  "interface": {
+    "displayName": "TracX SmartShip Plugins"
+  },
+  "plugins": [
+    {
+      "name": "smartship",
+      "source": { "source": "local", "path": "./plugins/smartship" },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Logistics"
+    }
+  ]
+}

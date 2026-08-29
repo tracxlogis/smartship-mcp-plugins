@@ -1,0 +1,19 @@
+{
+  "name": "tracx-mcp-marketplace",
+  "owner": {
+    "name": "TracX Logis Front Dev"
+  },
+  "metadata": {
+    "description": "SmartShip MCP 연결과 업무 스킬(주문·배송·픽업·SKU/재고)을 배포하는 TracX 플러그인 카탈로그",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "smartship",
+      "source": "./plugins/smartship",
+      "description": "SmartShip MCP 서버 연결 + 셀러 업무 스킬 12종(주문·송장·픽업·SKU/재고·배송 + 브리핑·분석·풀필먼트·문제해결·클레임·정산·재고동기화)",
+      "version": "0.4.0",
+      "category": "logistics"
+    }
+  ]
+}
