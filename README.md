@@ -47,17 +47,20 @@ mcp-marketplace/                    ← 마켓플레이스 루트 (배포 시 �
 
 ## 사용자 등록 방법
 
+**셀러 공개 배포 저장소: https://github.com/tracxlogis/smartship-mcp-plugins** (사내 GitLab
+`front/smartship-mcp-plugins` 는 사내 미러). 이 디렉터리가 정본이고 두 저장소로 동기화한다.
+
 ### Codex CLI
 
 ```
-codex plugin marketplace add <배포 저장소 or 로컬 경로>
+codex plugin marketplace add tracxlogis/smartship-mcp-plugins
 codex plugin install smartship@tracx-mcp-marketplace
 ```
 
 ### Claude Code
 
 ```
-/plugin marketplace add <배포 저장소 or 로컬 경로>
+/plugin marketplace add tracxlogis/smartship-mcp-plugins
 /plugin install smartship@tracx-mcp-marketplace
 ```
 
@@ -79,7 +82,7 @@ ChatGPT 공개 플러그인 디렉토리 제출은 아래 실행 계획 Phase 4 
 | 2 | 송장 출력(`/waybills`) MCP 도구 CRUD 12종(`src/lib/mcp/waybill-tools.ts`, group `waybills`) + `smartship-waybills` 스킬. 미포함: 인도 Momoe 라벨(A6/A4)·패킹 라벨 출력 | 완료 |
 | 3 | 셀러 워크플로 스킬 5종(브리핑·주문 분석·풀필먼트 운영·문제 주문 해결·클레임 CS) + TxMoney 조회 도구 4종(`get_txmoney_accounts`/`get_txmoney_monthly_deduction`/`search_txmoney_history`/`get_txmoney_history_count`, billing 그룹) | 완료 |
 | 3b | 정산·인보이스(billing)·재고 동기화(stock-sync) 스킬 + 무통장 입금 도구 2종(`get_txmoney_bank_deposits`/`notify_bank_deposit_paid`, `billing:write` scope 신설). 장기 잔여: SKU별 판매 집계 SP(서버측 집계, DB 작업+Redmine 검수), 인도 Momoe 라벨 도구(제외 결정 2026-08-29) | 완료 |
-| 4 | 배포: 이 디렉터리를 접근 가능한 전용 저장소로 분리 → `/services/smartship-mcp` 에 설치 절차 추가. ChatGPT 공개 디렉토리 제출 여부는 별도 결정(심사용 테스트 셀러 계정 필요) | 대기 |
+| 4 | 배포: 셀러 공개 GitHub 저장소 `tracxlogis/smartship-mcp-plugins` + 사내 GitLab 미러(`front/smartship-mcp-plugins`) 신설, `/services/smartship-mcp` 개발자 클라이언트 절에 플러그인 설치 절차 추가. ChatGPT 공개 디렉토리 제출 여부는 별도 결정(심사용 테스트 셀러 계정 필요) | 완료 |
 
 ## 유지보수
 
