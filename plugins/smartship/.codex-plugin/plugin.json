@@ -1,6 +1,6 @@
 {
   "name": "smartship",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Tx SmartShip 셀러 업무 플러그인 — SmartShip MCP 서버 연결(OAuth 2.1)과 업무 스킬 12종(주문·송장·픽업·SKU/재고·배송 현황 + 업무 브리핑·주문 분석·풀필먼트 운영·문제 주문 해결·클레임 CS·정산/TxMoney·재고 동기화)을 제공한다.",
   "author": {
     "name": "TracX Logis",
@@ -8,9 +8,18 @@
   },
   "homepage": "https://smartship2.tracxlogis.com/services/smartship-mcp",
   "skills": "./skills/",
+  "apps": "./.app.json",
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "SmartShip",
-    "shortDescription": "SmartShip 주문·배송·픽업·SKU/재고를 대화로 조회·처리"
+    "shortDescription": "SmartShip 주문·배송·픽업·SKU/재고를 대화로 조회·처리",
+    "longDescription": "SmartShip 셀러의 주문·송장·배송·픽업·SKU·재고 업무를 조회하고, 확인이 필요한 변경 작업을 안전하게 처리합니다.",
+    "developerName": "TracX Logis",
+    "category": "Logistics",
+    "capabilities": ["Read", "Write"],
+    "defaultPrompt": [
+      "오늘 처리해야 할 SmartShip 주문과 배송 문제를 브리핑해 주세요.",
+      "재고가 부족하거나 동기화가 필요한 SKU를 확인해 주세요."
+    ]
   }
 }

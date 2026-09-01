@@ -12,7 +12,7 @@
       "name": "smartship",
       "source": "./plugins/smartship",
       "description": "SmartShip MCP 서버 연결 + 셀러 업무 스킬 12종(주문·송장·픽업·SKU/재고·배송 + 브리핑·분석·풀필먼트·문제해결·클레임·정산·재고동기화)",
-      "version": "0.4.0",
+      "version": "0.4.1",
       "category": "logistics"
     }
   ]

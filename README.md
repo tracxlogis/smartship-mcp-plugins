@@ -28,7 +28,7 @@ waybills?"*, *"How much stock does this SKU have?"*
 
 ```
 codex plugin marketplace add tracxlogis/smartship-mcp-plugins
-codex plugin install smartship@tracx-mcp-marketplace
+codex plugin add smartship@tracx-mcp-marketplace
 ```
 
 ### Claude desktop app
@@ -134,7 +134,7 @@ TracX Logis **SmartShip** 셀러 계정을 AI 어시스턴트에 연결합니다
 
 ```
 codex plugin marketplace add tracxlogis/smartship-mcp-plugins
-codex plugin install smartship@tracx-mcp-marketplace
+codex plugin add smartship@tracx-mcp-marketplace
 ```
 
 #### Claude 데스크톱 앱
